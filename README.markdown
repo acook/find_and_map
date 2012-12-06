@@ -14,7 +14,7 @@ end #=> 1
 ````
 
 Using the same block above `find` returns `[:a, 1]` and `map` returns `[1, nil]`. But I want just the value, or even some other object based on it, but only that and nothing else.
-      
+
 This method finds the first match (like `Enumerable#find`) and then return the result of the block rather than the matching element (like `Enumerable#map`).
 
 I don't like doing explict returns in the middle of loops, or nil checks if find fails, explicit breaks that alter the functionality of a standard iterator, and using compact after a map just seems excessive.
@@ -36,3 +36,25 @@ Using `map`:
   value if key == :a
 end.compact
 ````
+
+## Installation
+
+Add this line to your application's Gemfile:
+
+    gem 'find_and_map'
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install find_and_map
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request

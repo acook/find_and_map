@@ -1,3 +1,5 @@
+require 'find_and_map/version'
+
 module FindAndMap
   def find_and_map
     self.each do |*element|
