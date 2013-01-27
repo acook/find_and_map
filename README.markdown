@@ -3,7 +3,19 @@ Find and Map
 
     Anthony M. Cook (2012)
 
-I was looking for a way to simply find the first matching element in an enumerable and return a mapped result.
+Finds and retuns the value of the block.
+
+Usage
+-----
+
+I don't include a Core Extension, but all you have to do is include it on the object you want to have the functionality.
+To add it to all Enumerable objects you could do:
+
+````ruby
+module Enumerable; include FindAndMap; end
+````
+
+Then you can use it to 
 
 For example:
 
@@ -13,7 +25,12 @@ For example:
 end #=> 1
 ````
 
-Using the same block above `find` returns `[:a, 1]` and `map` returns `[1, nil]`. But I want just the value, or even some other object based on it, but only that and nothing else.
+Background
+----------
+
+I was looking for a way to simply find the first matching element in an enumerable and return a mapped result.
+
+Using the same block above (in the Usage section) `find` returns `[:a, 1]` and `map` returns `[1, nil]`. But I want just the value, or even some other object based on it, but only that and nothing else.
 
 This method finds the first match (like `Enumerable#find`) and then return the result of the block rather than the matching element (like `Enumerable#map`).
 
