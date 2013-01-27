@@ -15,9 +15,7 @@ To add it to all Enumerable objects you could do:
 module Enumerable; include FindAndMap; end
 ````
 
-Then you can use it to 
-
-For example:
+Then you can use it like this:
 
 ````ruby
 {a: 1, b: 2}.find_and_map do |key, value|
