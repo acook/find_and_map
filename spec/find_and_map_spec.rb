@@ -1,5 +1,4 @@
 require 'rspec'
-require 'pry'
 require_relative '../lib/find_and_map'
 
 describe FindAndMap do

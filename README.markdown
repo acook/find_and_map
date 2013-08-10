@@ -1,27 +1,38 @@
 Find and Map
 ============
 
-    Anthony M. Cook (2012)
+    Anthony M. Cook (2013)
 
 Finds and retuns the value of the block.
 
 Usage
 -----
 
-I don't include a Core Extension, but all you have to do is include it on the object you want to have the functionality.
-To add it to all Enumerable objects you could do:
+Put it in your Gemfile:
 
-````ruby
-module Enumerable; include FindAndMap; end
-````
+```ruby
+gem 'find_and_map'
+```
+
+Then you can include it on your own Enumerable object:
+
+```ruby
+include FindAndMap
+```
+
+Or you can use the core extension directly the Gemfile:
+
+```ruby
+gem 'find_and_map', require: 'find_and_map/core_ext'
+```
 
 Then you can use it like this:
 
-````ruby
+```ruby
 {a: 1, b: 2}.find_and_map do |key, value|
   value if key == :a
 end #=> 1
-````
+```
 
 Background
 ----------
