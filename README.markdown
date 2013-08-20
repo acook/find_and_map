@@ -68,21 +68,8 @@ Using `map`:
 end.compact
 ````
 
-## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'find_and_map'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install find_and_map
-
-## Contributing
+Contributing
+------------
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
