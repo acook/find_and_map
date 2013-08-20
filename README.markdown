@@ -3,7 +3,12 @@ Find and Map
 
     Anthony M. Cook (2013)
 
-Finds and retuns the value of the block.
+Finds and returns the value of the block.
+
+[![Gem Version](https://badge.fury.io/rb/find_and_map.png)](http://badge.fury.io/rb/find_and_map)
+[![Build Status](https://travis-ci.org/acook/find_and_map.png?branch=master)](https://travis-ci.org/acook/find_and_map)
+[![Code Climate](https://codeclimate.com/github/acook/find_and_map.png)](https://codeclimate.com/github/acook/find_and_map)
+[![Dependency Status](https://gemnasium.com/acook/find_and_map.png)](https://gemnasium.com/acook/find_and_map)
 
 Usage
 -----
